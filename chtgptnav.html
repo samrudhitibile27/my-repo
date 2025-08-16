@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Modern Navbar</title>
+    <style>
+      /* Background animation pattern */
+      body {
+        margin: 0;
+        background-color: #000;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+      }
+
+      body:before {
+        content: "";
+        position: absolute;
+        inset: 40% -60% 0 -60%;
+        opacity: 0.3;
+        pointer-events: none;
+        background: radial-gradient(
+          circle,
+          rgba(0, 255, 255, 0.3),
+          transparent 70%
+        );
+      }
+
+      nav {
+        position: relative;
+        z-index: 1;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 40px;
+      }
+
+      nav ul li {
+        position: relative;
+      }
+
+      nav ul li button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 0;
+      }
+
+      /* Underline animation */
+      nav ul li button::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background: #0ff;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+
+      nav ul li.active button::after,
+      nav ul li button:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      /* Example of extra effect on active element */
+      nav.before .active-element {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="active"><button>Home</button></li>
+        <li><button>Blogs</button></li>
+        <li><button>Services</button></li>
+        <li><button>Contact</button></li>
+        <li><button>About</button></li>
+      </ul>
+    </nav>
+  </body>
+</html>

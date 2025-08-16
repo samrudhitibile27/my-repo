@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/premium-photo/colorful-abstract-background-with-waves-art-pattern_183314-10931.jpg");
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        background-size: cover;
+        background-position: center;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        padding: 00px;
+      }
+      div {
+        text-align: center;
+        border-style: inset;
+        border-radius: 60px;
+        border-width: 5px;
+        width: 300px;
+        margin-top: 20px;
+        border-color: rgb(216, 152, 222);
+        background-color: rgb(252, 219, 248);
+        background: rgba(255, 255, 255, 0.8);
+        justify-content: center;
+        padding: 00px 40px;
+      }
+      .input {
+        border-style: ridge;
+        border-radius: 30px;
+        opacity: 0.3;
+      }
+      .label {
+        color: rgb(8, 0, 0);
+        text-shadow: 2px 2px 1px #f49696;
+      }
+      h1 {
+        text-shadow: 2px 2px 2px rgb(236, 108, 108);
+      }
+      button {
+        border-style: ridge;
+        border-radius: 30px;
+        background-color: brown;
+        color: aliceblue;
+        padding: 10px 20px 10px 20px;
+      }
+      nav {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 40px;
+      }
+      .h1 {
+        background-color: rgb(193, 241, 238);
+        text-align: center;
+        border-radius: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h1">LOGIN - FORM</h1>
+    <nav>
+      <ul>
+        <li>
+          <button
+            onclick="window.location.href='https://www.google.com/search?q=w3+html&oq=&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxjqAjIMCAAQIxgnGOoCGK0GMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxBFGDsYwgMyGAgIEC4YQxjHARi0AhjqAhjRAxiABBiKBTIVCAkQABhCGJECGLQCGOoCGIAEGIoFMhUIChAAGEIYkQIYtAIY6gIYgAQYigUyFQgLEAAYQhiRAhi0AhjqAhiABBiKBdIBCTMzMzFqMGoxNagCDLACAfEFvSoI7lrc_ks&sourceid=chrome&ie=UTF-8'"
+          >
+            Home
+          </button>
+        </li>
+        <li>
+          <button>Blogs</button>
+        </li>
+        <li>
+          <button>Services</button>
+        </li>
+        <li>
+          <button>Contact</button>
+        </li>
+        <li>
+          <button>About</button>
+        </li>
+      </ul>
+    </nav>
+    <form>
+      <div>
+        <h1>LOGIN</h1>
+        <label class="label">UserName</label>
+        <input type="text" required class="input" /><br /><br />
+        <label class="label">Password</label>
+        <input type="password" required class="input" /><br /><br />
+
+        <label style="text-decoration: underline">forgot Password</label
+        ><br /><br />
+
+        <button onclick="window.location.href='grid.html'">Login</button><br />
+        <p>Don’t have an account? <a href="#">Create account</a></p>
+      </div>
+    </form>
+  </body>
+</html>

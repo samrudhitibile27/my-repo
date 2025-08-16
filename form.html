@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <style>
+      label {
+        font-weight: bold;
+      }
+      form {
+        width: 600px;
+        margin: auto;
+        background-color: cadetblue;
+        padding: 20px;
+      }
+      .button {
+        background-color: rgb(145, 18, 145);
+        text-align: center;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url('https://woorise.com/wp-content/uploads/2021/03/Job-Application.png');
+    "
+  >
+    <h1 style="text-align: center">APPLICATION FORM</h1>
+    <form>
+      <label>First Name</label>
+      <input type="text" name="firstname" placeholder="Enter Frist Name" />
+      <label>Last Name</label>
+      <input
+        type="text"
+        name="lastname"
+        placeholder="Enter Last Name"
+      /><br /><br />
+
+      <label>Date of birth</label>
+      <input type="date" name="date" />
+      <label>Age</label>
+      <input type="number" name="age" /> <br /><br />
+
+      <label>Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">--select Gender--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">other</option>
+      </select>
+      <label>Mail</label>
+      <input type="email" name="name" /><br /><br />
+
+      <label>Position Available</label>
+      <input type="radio" name="position" value="junior" />Junior Devloper
+      <input type="radio" name="position" value="Mid" />Mid -Level Devloper
+      <input type="radio" name="position" value="Senior" />senior Devloper<br /><br />
+
+      <label>Programming Language</label>
+      <input type="checkbox" value="java" />JAVA
+      <input type="checkbox" value="javascript" />JAVASCRIPT
+      <input type="checkbox" value="python" />PYTHON<br /><br />
+
+      <label>Password</label>
+      <input type="password" name="password" required />
+      <label>Confirm Password</label>
+      <input type="password" name="confirmpass" required /><br /><br />
+
+      <div style="text-align: center">
+        <input
+          type="button"
+          value="Submit"
+          style="background-color: rgb(145, 18, 145)"
+        />
+        <input
+          type="button"
+          value="Cancle"
+          style="background-color: rgb(145, 18, 145)"
+        />
+        <input
+          type="button"
+          value="Reset"
+          style="background-color: rgb(145, 18, 145)"
+        />
+      </div>
+    </form>
+  </body>
+</html>

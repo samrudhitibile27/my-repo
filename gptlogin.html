@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- coding by helpme_coder -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Login Form | helpme_coder</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab")
+          no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        padding: 40px;
+        width: 350px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        color: #fff;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .input-field {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .input-field input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      .input-field label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #ccc;
+        pointer-events: none;
+        transition: 0.3s;
+      }
+
+      .input-field input:focus + label,
+      .input-field input:valid + label {
+        top: -10px;
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .forget {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .forget a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .forget a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      .create-account {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .create-account a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .create-account a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h2>Login-form</h2>
+
+        <div class="input-field">
+          <input type="text" required />
+          <label>Enter email</label>
+        </div>
+
+        <div class="input-field">
+          <input type="password" required />
+          <label>Enter password</label>
+        </div>
+
+        <div class="forget">
+          <label for="Save-login">
+            <input type="checkbox" id="Save-login" />
+            Save login information
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit">Log In</button>
+
+        <div class="create-account">
+          <p>Don’t have an account? <a href="#">Create account</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
